@@ -3,14 +3,12 @@ runtime: org.gnome.Platform
 runtime-version: '51'
 sdk: org.gnome.Sdk
 command: smasi
-
 finish-args:
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
   - --share=network
   - --device=dri
-
 modules:
   - name: smasi
     buildsystem: simple
@@ -25,19 +23,15 @@ modules:
       - install -Dm644 com.smasisoftware.smasi.metainfo.xml /app/share/metainfo/com.smasisoftware.smasi.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/2S-Software/smasi-download/releases/download/v8.4.0/smasi-8.4.0-linux-x64.tar.gz
-        sha256: 7625c57253efe832b046e0c38ce06fd2cd87aaa4721388864e03522e4d2642ce
+        url: https://github.com/2S-Software/smasi-download/releases/download/v8.5.0/smasi-8.5.0-linux-x64.tar.gz
+        sha256: 295fa242396e7b85d22781e0a9b8479aeb0e796a2e15c8377e4dec2c09411220
         only-arches:
           - x86_64
-        x-checker-data:
-          type: github
-          repo: 2S-Software/smasi-download
-          version-pattern: 'v([\d.]+)'
-          url-template: https://github.com/2S-Software/smasi-download/releases/download/v$version/smasi-$version-linux-x64.tar.gz
-          is-main-source: true
       - type: file
-        path: com.smasisoftware.smasi.desktop
+        url: https://raw.githubusercontent.com/2S-Software/smasi-download/fef8ee1593db566a791df2a4e26bc79384a1e667/linux/package/com.smasisoftware.smasi.desktop
+        sha256: eacf1211aa5cb11ec4a8e8b5d01d8e00f0c1701ec69b1fc0a52c26725e229878
       - type: file
-        path: com.smasisoftware.smasi.metainfo.xml
+        url: https://raw.githubusercontent.com/2S-Software/smasi-download/fef8ee1593db566a791df2a4e26bc79384a1e667/linux/package/com.smasisoftware.smasi.metainfo.xml
+        sha256: fec87d4e23aa135819964ab086d3bd89093a2ca31c04a74953b429161bc19abf
       - type: file
         path: icon.png
