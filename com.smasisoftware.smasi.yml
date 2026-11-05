@@ -23,15 +23,15 @@ modules:
       - install -Dm644 com.smasisoftware.smasi.metainfo.xml /app/share/metainfo/com.smasisoftware.smasi.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/2S-Software/smasi-download/releases/download/v8.5.0/smasi-8.5.0-linux-x64.tar.gz
-        sha256: 295fa242396e7b85d22781e0a9b8479aeb0e796a2e15c8377e4dec2c09411220
+        url: https://github.com/2S-Software/smasi-download/releases/download/v8.5.1/smasi-8.5.1-linux-x64.tar.gz
+        sha256: 9da0327c00c3238e9ebc39ec35682e8a4b8912123ac47786630aaf01b8ccf2a7
         only-arches:
           - x86_64
       - type: file
-        url: https://raw.githubusercontent.com/2S-Software/smasi-download/fef8ee1593db566a791df2a4e26bc79384a1e667/linux/package/com.smasisoftware.smasi.desktop
+        url: https://raw.githubusercontent.com/2S-Software/smasi-download/7d5c3b7e50e284e4d3f27831dc42ee9413ae8a44/linux/package/com.smasisoftware.smasi.desktop
         sha256: eacf1211aa5cb11ec4a8e8b5d01d8e00f0c1701ec69b1fc0a52c26725e229878
       - type: file
-        url: https://raw.githubusercontent.com/2S-Software/smasi-download/fef8ee1593db566a791df2a4e26bc79384a1e667/linux/package/com.smasisoftware.smasi.metainfo.xml
-        sha256: fec87d4e23aa135819964ab086d3bd89093a2ca31c04a74953b429161bc19abf
+        url: https://raw.githubusercontent.com/2S-Software/smasi-download/7d5c3b7e50e284e4d3f27831dc42ee9413ae8a44/linux/package/com.smasisoftware.smasi.metainfo.xml
+        sha256: 67d5fee575644d96913cbb1a8f312ee4b94949fcbf25d30683c3f53b8d30cbd1
       - type: file
         path: icon.png
